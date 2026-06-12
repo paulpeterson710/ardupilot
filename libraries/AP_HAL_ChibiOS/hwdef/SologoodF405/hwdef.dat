@@ -164,3 +164,11 @@ define HAL_FRAME_TYPE_DEFAULT 12
 
 # minimal drivers to reduce flash usage
 include ../include/minimize_fpv_osd.inc
+
+# include my preferred extra features
+undef AP_OPTICALFLOW_ENABLED
+define AP_OPTICALFLOW_ENABLED 1
+undef AP_RANGEFINDER_MAVLINK_ENABLED
+define AP_RANGEFINDER_MAVLINK_ENABLED 1
+undef AC_PRECLAND_ENABLED
+define AC_PRECLAND_ENABLED 1
